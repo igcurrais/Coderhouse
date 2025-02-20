@@ -1,7 +1,4 @@
-# Coderhouse
+Entrega Currais
 
-hola
+sitio con inicio, creacion de lista y muestra de la lista
 
-otro hola 
-otra cosa
-cambio
