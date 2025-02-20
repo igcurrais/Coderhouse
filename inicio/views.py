@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from inicio.models import Bebida
 from inicio.forms import CrearBebida
@@ -18,7 +18,8 @@ def crear_bebida(request):
                             nombre=formulario.cleaned_data.get('nombre'),
                             descripcion=formulario.cleaned_data.get('descripcion')
                             )
-            bebida.save()   
+            bebida.save()
+            return redirect("listar_bebidas")
         
     return render(request, 'crear_bebida.html', {'formulario': formulario})
 

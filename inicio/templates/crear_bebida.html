@@ -11,7 +11,7 @@
         <a href={% url "crear_bebida" %}>crear bebidas</a>
         <a href={% url "listar_bebidas" %}>listar bebidas</a>  
     </nav>
-    <form action="" method="get">
+    <form action="" method="POST">
         {% csrf_token %}
         {{formulario}}
         <input type="submit" value="Crear">
