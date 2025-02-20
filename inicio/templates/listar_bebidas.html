@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista bebidas</title>
+</head>
+<body>
+    <nav>
+        <a href={% url "inicio" %}>inicio</a>
+        <a href={% url "crear_bebida" %}>crear bebidas</a>
+        <a href={% url "listar_bebidas" %}>listar bebidas</a>  
+    </nav>
+    {{bebidas}}
+</body>
+</html>
